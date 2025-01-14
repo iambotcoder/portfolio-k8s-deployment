@@ -26,6 +26,21 @@ Before you start, ensure you have the following:
 
 ---
 
+## 🗺️ Architecture
+
+The architecture of the portfolio website deployment involves the following components:
+
+- **AWS EKS Cluster**: A managed Kubernetes cluster that hosts the application.
+- **Docker**: Used to build and containerize the website.
+- **LoadBalancer Service**: Exposes the website to the internet.
+- **Kubernetes Deployment**: Ensures the application is running in pods, with multiple replicas for scalability.
+
+The application follows a microservices architecture, where the frontend service is independently deployed and managed.
+
+![Untitled design (3)](https://github.com/user-attachments/assets/915bb2d6-7cc0-4703-a9e6-d10b901130e9)
+
+---
+
 ## 🛠️ Setup & Installation
 
 ### 1️⃣ Install eksctl and kubectl
@@ -163,7 +178,17 @@ To get the LoadBalancer URL:
 kubectl get service
 ```
 
-Visit the URL to see the deployed portfolio website.
+---
+
+## 💻 Output
+
+After successful deployment, you can access the portfolio website via the LoadBalancer URL. The website should be available and accessible from the internet, displaying the portfolio content.
+
+Example of access:
+- Open the LoadBalancer URL obtained from the `kubectl get service` command in the browser.
+- The website will be visible, served from the containerized application.
+
+![Screenshot 2025-01-11 183844](https://github.com/user-attachments/assets/9592a457-71c5-481e-9143-82a338c54b8b)
 
 ---
 
@@ -184,7 +209,10 @@ This will remove the deployed application and associated resources from your clu
 
 This project demonstrates how to deploy a portfolio website using Kubernetes on AWS EKS. It covers the steps to set up the environment, build a custom Docker container, push the container to Docker Hub, and deploy it on Kubernetes using LoadBalancer services. This setup enables seamless access to the website via a scalable architecture.
 
+---
+## 👨‍🏫 Instructor
 
+This project was guided by **Rajdeep Saha**, who provided valuable mentorship throughout the process.
 
 
 
