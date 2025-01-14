@@ -89,6 +89,7 @@ docker login --username=<username>
 docker tag imageid <dockerhubrepo>/<username>/custom-httpd
 docker push <username>/repo
 ```
+---
 
 🏗️ ### Kubernetes Deployment
 
@@ -164,6 +165,8 @@ kubectl get service
 
 Visit the URL to see the deployed portfolio website.
 
+---
+
 ### 🧹 Cleaning Up Resources
 
 To delete the Kubernetes resources (deployment and service), run the following commands:
@@ -174,6 +177,8 @@ kubectl delete service lb-service
 ```
 
 This will remove the deployed application and associated resources from your cluster.
+
+---
 
 ### ✅ Conclusion
 
