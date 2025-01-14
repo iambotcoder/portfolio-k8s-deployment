@@ -90,7 +90,7 @@ docker tag imageid <dockerhubrepo>/<username>/custom-httpd
 docker push <username>/repo
 ```
 
-###🏗️ Kubernetes Deployment
+🏗️ ### Kubernetes Deployment
 
 1️⃣ Load Balancer and Deployment YAML
 
